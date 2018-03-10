@@ -1,28 +1,80 @@
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   text-align: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.signature > h2, h3 {
+  color: rgb(250, 247, 253);
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width:50vw;
+  background-color: #ffffff ;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.322);
+  border-radius: 5px;
+  padding: 2vh 2vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
-.App-title {
-  font-size: 1.5em;
+.add-todo {
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightcoral;
+  width:50%;
+  margin-bottom:5vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.App-intro {
-  font-size: large;
+.add-todo:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.todo-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width:45vw;
+}
+
+.todo-task {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightcoral;
+  width:100%;
+  cursor: pointer;
+}
+
+.todo-task-description {
+  width:100%
+}
+
+.todo-task-description-checked {
+  text-decoration-line: line-through;
+}
+
+.todo-task-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+}
+
+.edit-todo {
+  border: none;
+  width:70%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.edit-todo:focus {
+  outline: none;
 }
