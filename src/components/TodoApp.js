@@ -37,7 +37,6 @@ export default class TodoApp extends Component {
 	_onEditTask = (id, editType, newDescription) => {
 		let { todoList } = this.state
 		let newTodoList = []
-		console.log(editType,'edit')
 		if(editType === 'modify') {
 			newTodoList = todoList.map(e=> e.id === id ? {...e, modifying: !e.modifying} : e)
 		} else {
