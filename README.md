@@ -49,7 +49,6 @@ And that's it, your running the app.
 ## Built With
 
 * [React Js](https://reactjs.org/) - The front-end library used
-* [Material-Ui](www.material-ui.com) - Material design components
 
 ## License
 
