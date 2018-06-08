@@ -1,6 +1,6 @@
-# To do Web app for Benestudio
+# Basic To do Web app
 
-A to do web application for Benestudio.
+Basic to do web application.
 
 ## Demo
 
